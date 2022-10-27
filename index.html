@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.plot.ly/plotly-2.14.0.min.js"></script>
+    <title>Dashboard dengan Plotly JS</title>
+
+    <style>
+      body {
+        background-image: url("./subtle-prism.svg");
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- <div class="outer-wrapper flex justify-center flex-wrap">
+      <h1 class="font-bold text-4xl mt-16 text-center max-w-5xl">
+        Dashboard Analisis Bahan Pangan dan Komoditi di Provinsi Jakarta
+      </h1>
+      <div class="dashboard w-full flex justify-center my-16">
+        <div class="wrapper shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-6 rounded-lg max-w-4xl w-[90%] bg-gray-50">
+          <div class="flex mx-auto m-5" id="scatterChart">
+          </div>
+          <div class="flex mx-auto my-5" id="lineChart">
+          </div>
+          <div class="flex mx-auto my-5" id="lineTag">
+          </div>
+          <div class="flex mx-auto my-5" id="multipleLine">
+          </div>
+          <div class="flex mx-auto my-5" id="barChart">
+          </div>
+          <div class="flex mx-auto my-5" id="hbarChart">
+          </div>
+          <div class="flex mx-auto my-5" id="pieChart">
+          </div>
+          <div class="flex mx-auto my-5" id="donutChart">
+          </div>
+          <div class="flex mx-auto my-5" id="myPlot">
+          </div>
+          <div class="flex mx-auto my-5" id="scatter_wave">
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <h1 class="font-bold text-4xl mt-16 mb-10 text-center">
+      Dashboard Analisis Bahan Pangan dan Komoditi di Provinsi Jakarta
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 justify-center p-7 bg-gray-50 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-[90%] my-10
+      mx-auto rounded-xl">
+      <div class="max-w-3xl">
+        <h1 class="text-center">Scatter Plot</h1>
+        <div id="scatterChart"></div>
+      </div>
+
+      <div class="max-w-3xl">
+        <h1 class="text-center">Line Graphs</h1>
+        <div id="lineChart" class=" max-w-3xl"></div>
+      </div>
+
+      <div class="max-w-3xl">
+        <h1 class="text-center">Line Graphs</h1>
+        <div id="lineTag" class=" max-w-3xl"></div>
+      </div>
+
+      <div class="max-w-3xl">
+        <h1 class="text-center">Membuat Grafik dari banyak data</h1>
+        <div id="multipleLine" class=" max-w-3xl"></div>
+      </div>
+
+      <div class="max-w-3xl">
+        <h1 class="text-center">Bar Charts</h1>
+        <div id="barChart" class=" max-w-3xl"></div>
+      </div>
+
+      <div class="max-w-3xl">
+        <h1 class="text-center">Horizontal Bar Charts</h1>
+        <div id="hbarChart" class=" max-w-3xl"></div>
+      </div>
+
+      <div class="max-w-3xl">
+        <h1 class="text-center">Pie Charts</h1>
+        <div id="pieChart" class=" max-w-3xl"></div>
+      </div>
+
+      <div class="max-w-3xl">
+        <h1 class="text-center">Donut Charts</h1>
+        <div id="donutChart" class=" max-w-3xl"></div>
+      </div>
+
+      <div class="max-w-3xl">
+        <h1 class="text-center">Plotting Equations</h1>
+        <div id="myPlot" class=" max-w-3xl"></div>
+      </div>
+
+      <div class="max-w-3xl">
+        <h1 class="text-center">Plotting Equations 2</h1>
+        <div id="scatter_wave" class=" max-w-3xl"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
